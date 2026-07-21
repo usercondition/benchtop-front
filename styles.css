@@ -180,10 +180,19 @@ code {
 }
 
 .hero__lede {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   color: var(--muted);
   max-width: 34ch;
   font-size: 0.98rem;
+}
+
+.hero__tags {
+  margin: 0 0 1.6rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 @keyframes drift {
@@ -261,10 +270,20 @@ code {
   text-transform: uppercase;
 }
 
+/* Alignment system: titles anchor left, ledes anchor right */
 .section__lede {
-  margin: 0;
+  margin: 0 0 0 auto;
   color: var(--muted);
   font-size: 0.92rem;
+  text-align: right;
+  max-width: 38ch;
+}
+
+@media (max-width: 560px) {
+  .section__lede {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 /* Spec list — minimal industrial */
@@ -361,6 +380,11 @@ code {
   animation: rise 0.3s var(--ease);
 }
 
+/* Contact: action block anchors right, mirroring the lede */
+.contact__body {
+  text-align: right;
+}
+
 .section--contact .btn {
   margin-top: 0.25rem;
 }
@@ -370,6 +394,12 @@ code {
   font-size: 0.8rem;
   color: var(--muted);
   font-family: var(--mono);
+}
+
+@media (max-width: 560px) {
+  .contact__body {
+    text-align: left;
+  }
 }
 
 /* Footer */
