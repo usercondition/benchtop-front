@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta
       name="description"
-      content="High-detail resin 3D printing and CAD design — miniatures, prototypes, functional parts, and small batches. Send a file or an idea and get a quote."
+      content="High-detail resin 3D printing and CAD design — miniatures, prototypes, functional parts, and small batches."
     />
-    <meta name="theme-color" content="#0c0b0a" />
-    <title>Benchtop Resin Co. — Custom resin printing</title>
+    <meta name="theme-color" content="#0e0e0e" />
+    <title>Benchtop Resin Co. — Resin &amp; CAD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Figtree:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -21,12 +21,12 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <div class="site-header__inner">
+      <div class="wrap site-header__inner">
         <a class="brand" href="#top">Benchtop Resin Co.</a>
         <nav class="nav" aria-label="Primary">
           <a href="#work">Capabilities</a>
           <a href="#faq">FAQ</a>
-          <a class="nav__cta" href="#contact">Get in touch</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -36,7 +36,7 @@
         <div class="hero__media" aria-hidden="true">
           <img
             class="hero__img"
-            src="assets/hero-build-plate.png"
+            src="assets/hero-industrial-02.png"
             alt=""
             width="1920"
             height="1080"
@@ -45,105 +45,85 @@
           />
         </div>
         <div class="hero__veil" aria-hidden="true"></div>
-        <div class="hero__content">
+        <div class="wrap hero__content">
           <p class="brand brand--hero">Benchtop Resin Co.</p>
-          <h1 id="hero-title" class="hero__title">High-detail resin printing, from file to finished part.</h1>
+          <h1 id="hero-title" class="hero__title">Resin fabrication. CAD when you need it.</h1>
           <p class="hero__lede">
-            Miniatures, prototypes, functional parts, and CAD design — bring a file or just an idea.
+            Parts, prototypes, miniatures, and short runs — from your file or a brief.
           </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">Start a project</a>
-            <a class="btn btn--ghost" href="#work">See capabilities</a>
-          </div>
+          <a class="btn" href="#contact">Start a project</a>
         </div>
       </section>
 
-      <section id="work" class="section section--offer" aria-labelledby="offer-title">
+      <section id="work" class="section" aria-labelledby="offer-title">
         <div class="wrap">
           <header class="section__head">
             <h2 id="offer-title" class="section__title">Capabilities</h2>
-            <p class="section__lede">
-              A full resin fabrication bench — not just miniatures. Every job is quoted from your file
-              or request; message me with what you need.
-            </p>
+            <p class="section__lede">Full resin bench. Quoted per job.</p>
           </header>
-          <div class="cap-grid">
-            <article class="cap-card">
-              <h3 class="cap-card__title">Miniatures &amp; display pieces</h3>
-              <p>
-                Tabletop armies, characters, vehicles, terrain, and busts — fantasy, sci-fi, or your own
-                universe. Cleaned and ready for priming.
-              </p>
-            </article>
-            <article class="cap-card">
-              <h3 class="cap-card__title">Functional parts &amp; prototypes</h3>
-              <p>
-                One-off replacements, fixtures, enclosures, and concept models where fine detail and
-                tight tolerances matter.
-              </p>
-            </article>
-            <article class="cap-card">
-              <h3 class="cap-card__title">CAD design</h3>
-              <p>
-                No file? No problem. From sketches, photos, or measurements to a print-ready model —
-                new designs or modifications to existing ones.
-              </p>
-            </article>
-            <article class="cap-card">
-              <h3 class="cap-card__title">Small-batch runs</h3>
-              <p>
-                Repeat parts and short production runs with consistent quality, checked piece by piece
-                before they leave the bench.
-              </p>
-            </article>
-          </div>
+
+          <dl class="spec">
+            <div class="spec__row">
+              <dt>Miniatures &amp; display</dt>
+              <dd>Armies, characters, vehicles, terrain, busts. Cleaned, ready to prime.</dd>
+            </div>
+            <div class="spec__row">
+              <dt>Functional &amp; prototype</dt>
+              <dd>Replacements, fixtures, enclosures, concept models. Fine detail, tight fits.</dd>
+            </div>
+            <div class="spec__row">
+              <dt>CAD design</dt>
+              <dd>Sketch, photo, or measurements → print-ready model. New or modified.</dd>
+            </div>
+            <div class="spec__row">
+              <dt>Small-batch</dt>
+              <dd>Repeat parts and short runs. Consistent quality, checked before ship.</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section id="faq" class="section section--faq" aria-labelledby="faq-title">
+      <section id="faq" class="section" aria-labelledby="faq-title">
         <div class="wrap">
           <header class="section__head">
             <h2 id="faq-title" class="section__title">FAQ</h2>
-            <p class="section__lede">
-              The short version of how a job works. Anything not covered here — just ask.
-            </p>
+            <p class="section__lede">How a job works. Ask if something’s missing.</p>
           </header>
+
           <div class="faq">
             <details class="faq__item">
               <summary>Do I need my own files?</summary>
               <p>
-                No. Send an STL / fileset if you have one, or describe what you’re after — I can design
-                it in CAD from sketches, photos, or measurements, or help you find an existing model.
+                No. Send an STL if you have one, or describe the part — CAD from sketches, photos, or
+                measurements is available.
               </p>
             </details>
             <details class="faq__item">
-              <summary>What kinds of jobs do you take?</summary>
+              <summary>What jobs do you take?</summary>
               <p>
-                Anything that suits high-detail resin: miniatures and display pieces, prototypes,
-                replacement and functional parts, and small production runs. If you’re not sure it
-                fits, ask — worst case I’ll point you in the right direction.
+                High-detail resin work: miniatures, display pieces, prototypes, functional parts, and
+                small batches. Unsure? Ask.
               </p>
             </details>
             <details class="faq__item">
               <summary>How does pricing work?</summary>
               <p>
-                Every job is quoted individually based on size, quantity, complexity, and any design
-                work involved. Share what you need and you’ll get a clear price before anything goes
-                on the plate.
+                Quoted per job — size, quantity, complexity, and any design work. Clear price before
+                anything hits the plate.
               </p>
             </details>
             <details class="faq__item">
               <summary>What condition do parts arrive in?</summary>
               <p>
-                Cleaned, cured, and checked — ready for priming, painting, or use. Supports are removed
-                unless we agree otherwise for fragile pieces.
+                Cleaned, cured, checked. Ready for priming, painting, or use. Supports removed unless
+                agreed otherwise.
               </p>
             </details>
             <details class="faq__item">
               <summary>How do I start?</summary>
               <p>
-                Reach out with a file, photos, a link, or a short description. I’ll confirm feasibility,
-                price, and timing — then the job goes on the bench.
+                Send a file, photos, a link, or a short brief. Feasibility, price, and timing confirmed
+                first.
               </p>
             </details>
           </div>
@@ -151,16 +131,15 @@
       </section>
 
       <section id="contact" class="section section--contact" aria-labelledby="contact-title">
-        <div class="wrap wrap--narrow">
-          <h2 id="contact-title" class="section__title">Get in touch</h2>
-          <p class="section__lede">
-            Tell me what you’re building — attach a file, photos, or just describe the idea. I’ll reply
-            with feasibility, price, and timing.
-          </p>
-          <a class="btn btn--primary btn--lg" href="mailto:hello@example.com?subject=Project%20request">
-            Start a project
-          </a>
-          <p class="contact__note">Replace <code>hello@example.com</code> with your real address when ready.</p>
+        <div class="wrap">
+          <header class="section__head">
+            <h2 id="contact-title" class="section__title">Contact</h2>
+            <p class="section__lede">
+              File, photos, or a brief. Reply with feasibility, price, and timing.
+            </p>
+          </header>
+          <a class="btn" href="mailto:hello@example.com?subject=Project%20request">Email a project</a>
+          <p class="contact__note">Replace <code>hello@example.com</code> when ready.</p>
         </div>
       </section>
     </main>
@@ -168,12 +147,7 @@
     <footer class="site-footer">
       <div class="wrap site-footer__inner">
         <span class="brand brand--footer">Benchtop Resin Co.</span>
-        <span class="site-footer__meta">Resin printing &amp; CAD design · Placeholder name</span>
-        <span class="site-footer__meta">
-          <a href="v2/index.html">Daylight</a>
-          ·
-          <a href="v3/index.html">Industrial</a>
-        </span>
+        <span class="site-footer__meta">Resin · CAD · Placeholder name</span>
       </div>
     </footer>
 
