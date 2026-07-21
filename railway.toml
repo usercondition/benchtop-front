@@ -1,0 +1,10 @@
+# Railway — static client site
+# https://docs.railway.app/reference/config-as-code
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "node server.js"
+healthcheckPath = "/"
+healthcheckTimeout = 30

@@ -1,0 +1,16 @@
+{
+  "name": "benchtop-front",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Client-facing resin printing and CAD site",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "serve-handler": "^6.1.6"
+  }
+}
