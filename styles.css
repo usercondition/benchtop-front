@@ -468,9 +468,10 @@ code {
   font-size: 1.05rem;
 }
 
-.site-footer__meta {
-  color: var(--muted);
-  font-size: 0.9rem;
+.site-footer__meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 /* Reveal on scroll */
