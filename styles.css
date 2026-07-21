@@ -66,8 +66,8 @@ code {
 
 /* Header spans full width: brand left, nav right */
 .wrap--header {
-  width: calc(100% - 2 * var(--pad));
-  margin-inline: auto;
+  width: 100%;
+  padding-inline: var(--pad);
 }
 
 /* Body content: left-aligned readable column */
