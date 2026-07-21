@@ -7,8 +7,7 @@
   --accent: #c4c4c4;
   --font: "IBM Plex Sans", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --max: 52rem;
-  --pad: clamp(1.15rem, 3.5vw, 2rem);
+  --pad: clamp(1.15rem, 3.5vw, 2.5rem);
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -28,9 +27,7 @@ body {
   font-size: 1rem;
   line-height: 1.55;
   color: var(--text);
-  background:
-    linear-gradient(90deg, transparent 0, transparent calc(50% - 26rem), var(--line) calc(50% - 26rem), var(--line) calc(50% - 26rem + 1px), transparent calc(50% - 26rem + 1px)),
-    var(--bg);
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -65,8 +62,9 @@ code {
   top: var(--pad);
 }
 
+/* Full-bleed layout: content anchors to the viewport edges, not a centered column */
 .wrap {
-  width: min(100% - 2 * var(--pad), var(--max));
+  width: calc(100% - 2 * var(--pad));
   margin-inline: auto;
 }
 
@@ -86,6 +84,10 @@ code {
   justify-content: space-between;
   gap: 1rem;
   min-height: 3.25rem;
+}
+
+.site-header .brand {
+  margin-right: auto;
 }
 
 .brand {
@@ -318,16 +320,22 @@ code {
 }
 
 .spec__row dd {
-  margin: 0;
+  margin: 0 0 0 auto;
   color: var(--muted);
   font-size: 0.95rem;
-  max-width: 40ch;
+  max-width: 44ch;
+  text-align: right;
 }
 
 @media (max-width: 560px) {
   .spec__row {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+
+  .spec__row dd {
+    margin-left: 0;
+    text-align: left;
   }
 }
 
@@ -373,11 +381,19 @@ code {
 }
 
 .faq__item p {
-  margin: 0 0 1rem;
+  margin: 0 0 1rem auto;
   color: var(--muted);
   max-width: 48ch;
   font-size: 0.92rem;
+  text-align: right;
   animation: rise 0.3s var(--ease);
+}
+
+@media (max-width: 560px) {
+  .faq__item p {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 /* Contact: action block anchors right, mirroring the lede */
