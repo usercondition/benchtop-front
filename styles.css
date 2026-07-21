@@ -325,75 +325,47 @@ code {
   }
 }
 
-/* Store — MMF product gallery */
-.store__status {
-  margin: 0;
+/* Store — callout linking to the MMF merchant profile */
+.store-card {
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--text);
+  background: var(--surface);
+  padding: 1.5rem 1.5rem 1.6rem;
+}
+
+.store-card__lede {
+  margin: 0 0 1.1rem;
   color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
+  font-size: 0.95rem;
+  max-width: 52ch;
 }
 
-.store__grid {
+.store-card__meta {
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: 0.5rem;
 }
 
-.product {
-  display: flex;
-  flex-direction: column;
-  background: var(--bg);
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.2s ease;
-}
-
-.product:hover {
-  background: var(--surface);
-}
-
-.product__img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  filter: grayscale(0.2);
-  transition: filter 0.2s ease;
-}
-
-.product:hover .product__img {
-  filter: grayscale(0);
-}
-
-.product__img--empty {
-  display: block;
-  background: repeating-linear-gradient(45deg, var(--surface), var(--surface) 8px, var(--bg) 8px, var(--bg) 16px);
-}
-
-.product__name {
-  padding: 0.65rem 0.75rem 0.8rem;
-  font-size: 0.82rem;
-  line-height: 1.35;
+.store-card__meta li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
   color: var(--text);
 }
 
-.store__link {
-  display: inline-flex;
-  margin-top: 1.5rem;
+.store-card__meta li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
 }
 
-.btn--ghost {
-  color: var(--text);
-  background: transparent;
-  border: 1px solid var(--line);
-}
-
-.btn--ghost:hover {
-  background: var(--surface);
-  border-color: var(--text);
-  color: var(--text);
+.store-card__cta {
+  margin-top: 0.25rem;
 }
 
 /* FAQ — question, then answer directly under it */
