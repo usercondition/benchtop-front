@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://benchtop-front-production.up.railway.app/sitemap.xml
