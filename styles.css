@@ -7,6 +7,8 @@
   --accent: #c4c4c4;
   --font: "IBM Plex Sans", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
+  /* Readable column, pinned to the left — not centered, not edge-to-edge */
+  --content: 40rem;
   --pad: clamp(1.15rem, 3.5vw, 2.5rem);
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -62,10 +64,17 @@ code {
   top: var(--pad);
 }
 
-/* Full-bleed layout: content anchors to the viewport edges, not a centered column */
-.wrap {
+/* Header spans full width: brand left, nav right */
+.wrap--header {
   width: calc(100% - 2 * var(--pad));
   margin-inline: auto;
+}
+
+/* Body content: left-aligned readable column */
+.wrap {
+  width: min(100% - 2 * var(--pad), var(--content));
+  margin-left: var(--pad);
+  margin-right: auto;
 }
 
 /* Header */
@@ -84,10 +93,6 @@ code {
   justify-content: space-between;
   gap: 1rem;
   min-height: 3.25rem;
-}
-
-.site-header .brand {
-  margin-right: auto;
 }
 
 .brand {
@@ -256,15 +261,10 @@ code {
   margin-bottom: 1.75rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--line);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem 1.5rem;
 }
 
 .section__title {
-  margin: 0;
+  margin: 0 0 0.45rem;
   font-family: var(--mono);
   font-weight: 500;
   font-size: 0.78rem;
@@ -272,33 +272,25 @@ code {
   text-transform: uppercase;
 }
 
-/* Alignment system: titles anchor left, ledes anchor right */
 .section__lede {
-  margin: 0 0 0 auto;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  text-align: right;
-  max-width: 38ch;
+  font-size: 0.95rem;
+  max-width: 42ch;
 }
 
-@media (max-width: 560px) {
-  .section__lede {
-    margin-left: 0;
-    text-align: left;
-  }
-}
-
-/* Spec list — minimal industrial */
+/* Spec list — label beside description, tight and scannable */
 .spec {
   margin: 0;
 }
 
 .spec__row {
   display: grid;
-  grid-template-columns: minmax(9rem, 12rem) 1fr;
-  gap: 0.75rem 1.5rem;
-  padding: 1.1rem 0;
+  grid-template-columns: 11.5rem minmax(0, 1fr);
+  gap: 0.65rem 1.25rem;
+  padding: 1.05rem 0;
   border-bottom: 1px solid var(--line);
+  align-items: start;
 }
 
 .spec__row:last-child {
@@ -317,41 +309,31 @@ code {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text);
+  padding-top: 0.15rem;
 }
 
 .spec__row dd {
-  margin: 0 0 0 auto;
+  margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
-  max-width: 44ch;
-  text-align: right;
 }
 
 @media (max-width: 560px) {
   .spec__row {
     grid-template-columns: 1fr;
-    gap: 0.35rem;
-  }
-
-  .spec__row dd {
-    margin-left: 0;
-    text-align: left;
+    gap: 0.3rem;
   }
 }
 
-/* FAQ */
+/* FAQ — question, then answer directly under it */
 .faq__item {
   border-bottom: 1px solid var(--line);
-}
-
-.faq__item:first-child {
-  border-top: 0;
 }
 
 .faq__item summary {
   list-style: none;
   cursor: pointer;
-  padding: 0.95rem 1.5rem 0.95rem 0;
+  padding: 0.95rem 1.75rem 0.95rem 0;
   font-size: 0.95rem;
   font-weight: 500;
   position: relative;
@@ -381,28 +363,16 @@ code {
 }
 
 .faq__item p {
-  margin: 0 0 1rem auto;
+  margin: 0 0 1rem;
   color: var(--muted);
   max-width: 48ch;
   font-size: 0.92rem;
-  text-align: right;
   animation: rise 0.3s var(--ease);
 }
 
-@media (max-width: 560px) {
-  .faq__item p {
-    margin-left: 0;
-    text-align: left;
-  }
-}
-
-/* Contact: action block anchors right, mirroring the lede */
-.contact__body {
-  text-align: right;
-}
-
+/* Contact — same left column as everything else */
 .section--contact .btn {
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .contact__note {
@@ -410,12 +380,6 @@ code {
   font-size: 0.8rem;
   color: var(--muted);
   font-family: var(--mono);
-}
-
-@media (max-width: 560px) {
-  .contact__body {
-    text-align: left;
-  }
 }
 
 /* Footer */
@@ -430,6 +394,8 @@ code {
   gap: 0.5rem 1.25rem;
   align-items: baseline;
   justify-content: space-between;
+  width: calc(100% - 2 * var(--pad));
+  margin-inline: auto;
 }
 
 .brand--footer {
