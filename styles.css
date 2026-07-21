@@ -444,28 +444,6 @@ code {
   margin-top: 0.35rem;
 }
 
-.contact__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.65rem;
-  align-items: center;
-  margin: 1rem 0 0;
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.02em;
-  color: var(--muted);
-}
-
-.contact__links a {
-  color: var(--muted);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}
-
-.contact__links a:hover {
-  color: var(--text);
-}
-
 /* Footer */
 .site-footer {
   padding: 1.25rem 0 1.75rem;
