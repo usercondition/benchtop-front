@@ -276,7 +276,7 @@ code {
   top: 0;
   right: 0;
   bottom: 0;
-  width: min(44vw, 32rem);
+  width: min(62vw, 58rem);
   z-index: 0;
   pointer-events: none;
 }
@@ -285,11 +285,11 @@ code {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 65% 50%;
-  filter: grayscale(0.5) contrast(1.08) brightness(0.8);
-  opacity: 0.6;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 72%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 72%);
+  object-position: 80% 50%;
+  filter: grayscale(0.5) contrast(1.08) brightness(0.82);
+  opacity: 0.7;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
 }
 
 @media (max-width: 900px) {
