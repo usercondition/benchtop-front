@@ -3,6 +3,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+s.log
+s.err
+srv.log
+srv.err.log
 .env
 .env.*
 !.env.example
