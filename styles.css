@@ -364,8 +364,23 @@ code {
   color: var(--muted);
 }
 
-.store-card__cta {
+.store-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
   margin-top: 0.25rem;
+}
+
+.btn--ghost {
+  color: var(--text);
+  background: transparent;
+  border-color: var(--line);
+}
+
+.btn--ghost:hover {
+  background: var(--surface);
+  border-color: var(--text);
+  color: var(--text);
 }
 
 /* FAQ — question, then answer directly under it */
