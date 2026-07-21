@@ -371,10 +371,15 @@ code {
 }
 
 .store-card__actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 0.65rem;
   margin-top: 0.25rem;
+  max-width: 44rem;
+}
+
+.store-card__actions .btn {
+  width: 100%;
 }
 
 .btn--ghost {
