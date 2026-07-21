@@ -1,0 +1,22 @@
+(() => {
+  const sections = document.querySelectorAll(".section");
+  if (!sections.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  sections.forEach((el) => el.classList.add("reveal"));
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  sections.forEach((el) => io.observe(el));
+})();

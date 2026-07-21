@@ -1,0 +1,13 @@
+---
+description: Always commit and push benchtop-front changes after finishing work
+alwaysApply: true
+---
+
+# Auto-push for this repo
+
+After completing any meaningful file changes in this project:
+
+1. Stage and commit with a concise message (unless the user asked not to).
+2. Push to `origin` (`git push -u origin HEAD`) without waiting to be asked.
+3. Do not force-push. Do not amend commits already pushed.
+4. Skip committing secrets (`.env`, credentials).
