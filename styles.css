@@ -122,8 +122,8 @@ code {
   color: var(--text);
 }
 
-@media (max-width: 560px) {
-  .nav a:not([href="#contact"]) {
+@media (max-width: 720px) {
+  .nav a:not([href="#samples"]):not([href="#contact"]) {
     display: none;
   }
 }
@@ -318,6 +318,55 @@ code {
   color: var(--muted);
   font-size: 0.95rem;
   max-width: 42ch;
+}
+
+/* Wider column for photo gallery */
+.wrap--wide {
+  width: min(100% - 2 * var(--pad), 72rem);
+}
+
+/* Samples gallery — real client prints */
+.section--samples {
+  overflow: visible;
+}
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  gap: 0.55rem;
+}
+
+.gallery__item {
+  margin: 0;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transition: transform 0.45s var(--ease), filter 0.35s ease;
+  filter: contrast(1.04) brightness(0.96);
+}
+
+.gallery__item:hover img,
+.gallery__item:focus-within img {
+  transform: scale(1.04);
+  filter: contrast(1.08) brightness(1);
+}
+
+@media (max-width: 560px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.4rem;
+  }
 }
 
 /* Spec list — label beside description, tight and scannable */

@@ -12,3 +12,5 @@ srv.err.log
 !.env.example
 .vscode/
 .idea/
+
+assets/_review/
