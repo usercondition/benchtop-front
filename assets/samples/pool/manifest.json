@@ -1,86 +1,150 @@
 {
-  "categories": {
-    "studio": {
-      "label": "dark studio",
-      "ids": [
-        "img_2850", "img_2851", "img_2852", "img_2855", "img_2860", "img_2861", "img_2865",
-        "img_6514", "img_6515", "img_6520", "img_6524", "img_6525", "img_6548", "img_6549",
-        "img_6550", "img_6555", "img_6594", "img_6595"
-      ]
-    },
-    "mat_cool": {
-      "label": "cool grey gaming mat",
-      "ids": [
-        "img_5028", "img_5029", "img_5042", "img_5043", "img_5055", "img_5075", "img_5076",
-        "img_5090", "img_5091", "img_7344", "img_7345", "img_7346", "img_7457", "img_7458",
-        "img_7475", "img_7476", "img_7485", "img_7490"
-      ]
-    },
-    "mat_dark": {
-      "label": "darker tabletop mat",
-      "ids": [
-        "img_5105", "img_5110", "img_5115", "img_5184", "img_5185", "img_5190", "img_5191",
-        "img_5194", "img_7331", "img_7332", "img_7335", "img_7477", "img_7703", "img_7704",
-        "img_7710", "img_7720", "img_7725", "img_7728"
-      ]
-    }
-  },
-  "alts": {
-    "img_2850": "Resin-printed mesh-style scale wheels on a dark surface",
-    "img_2851": "Close detail of resin-printed scale wheels",
-    "img_2852": "Pair of resin-printed scale wheels with tire tread",
-    "img_2855": "Resin-printed mesh-style scale wheels with detailed tire tread",
-    "img_2860": "Front view of an unpainted resin rally car with light pod",
-    "img_2861": "Resin rally car model photographed head-on",
-    "img_2865": "Unpainted resin rally car model with auxiliary light pod",
-    "img_6514": "Display resin figure seated on an ornate carved pedestal",
-    "img_6515": "Display resin figure on a carved pedestal, alternate angle",
-    "img_6520": "Sci-fi display figure on a detailed resin base",
-    "img_6524": "Sci-fi display figure with mechanical leg armor",
-    "img_6525": "Sci-fi display figure, alternate pose",
-    "img_6548": "Veiled figure with spiked headdress on a detailed display base",
-    "img_6549": "Veiled display figure with ornate headdress",
-    "img_6550": "Close view of a detailed resin display figure",
-    "img_6555": "Crown and upper body detail of a resin display figure",
-    "img_6594": "Dynamic action figure leaping over mechanical wreckage base",
-    "img_6595": "Action display figure on a mechanical debris base",
-    "img_5028": "High-detail resin knight miniature with sword and ornate shield",
-    "img_5029": "Armored knight resin miniature on a textured gaming mat",
-    "img_5042": "Industrial armored miniature with mechanical claw gauntlets",
-    "img_5043": "Industrial warrior miniature with heavy mechanical arms",
-    "img_5055": "Industrial armored soldier miniature with respirator and tool gauntlet",
-    "img_5075": "Six-armed fantasy beast warrior resin miniature",
-    "img_5076": "Fantasy beast warrior miniature, alternate angle",
-    "img_5090": "Horned armored knight resin miniature with broadsword",
-    "img_5091": "Horned knight miniature in a combat stance",
-    "img_7344": "Heavy armored warrior resin miniature with spiked mace",
-    "img_7345": "Armored warrior miniature with mace, alternate angle",
-    "img_7346": "Heavy armored resin warrior on a gaming mat",
-    "img_7457": "Gas-masked infantry miniature with rifle and tactical gear",
-    "img_7458": "Gas-masked infantry miniature, alternate angle",
-    "img_7475": "Cloaked traveler miniature with backpack and sword",
-    "img_7476": "Traveler miniature with pack and weapon",
-    "img_7485": "Tabletop infantry resin miniature on a textured mat",
-    "img_7490": "Detailed resin infantry miniature ready to paint",
-    "img_5105": "Sci-fi tank miniature on a wood and terrain backdrop",
-    "img_5110": "Armored vehicle resin miniature with track detail",
-    "img_5115": "Sci-fi battle tank resin miniature with turret and tracks",
-    "img_5184": "Armored rider on a monowheel vehicle resin miniature",
-    "img_5185": "Monowheel vehicle miniature, alternate angle",
-    "img_5190": "Monowheel rider miniature with forward lance weapon",
-    "img_5191": "Monowheel rider miniature on a dark gaming mat",
-    "img_5194": "Sci-fi monowheel vehicle resin miniature",
-    "img_7331": "Ornate power-armored warrior with sword and chain details",
-    "img_7332": "Power-armored warrior miniature, alternate angle",
-    "img_7335": "Ornate armored warrior resin miniature on a gaming mat",
-    "img_7477": "Cloaked miniature with backpack on a dark tabletop",
-    "img_7703": "Armored dwarf-style miniature dual-wielding ornate pistols",
-    "img_7704": "Dual-pistol armored miniature, alternate angle",
-    "img_7710": "Stocky armored miniature with detailed weapons",
-    "img_7720": "Rear view of an armored warrior resin miniature",
-    "img_7725": "Fantasy warrior miniature on a dark gaming mat",
-    "img_7728": "Armored miniature showing back and weapon detail"
-  },
+  "per_row": 6,
   "row_order": ["mat_cool", "studio", "mat_dark"],
-  "per_row": 6
+  "designs": {
+    "wheels_bbs": {
+      "category": "studio",
+      "pick": "img_2855",
+      "alts_of": ["img_2850", "img_2851", "img_2852"],
+      "alt": "Resin-printed mesh-style scale wheels with detailed tire tread"
+    },
+    "rally_car": {
+      "category": "studio",
+      "pick": "img_2865",
+      "alts_of": ["img_2860", "img_2861", "img_2863"],
+      "alt": "Unpainted resin rally car model with auxiliary light pod"
+    },
+    "witch_pedestal": {
+      "category": "studio",
+      "pick": "img_6514",
+      "alts_of": ["img_6515", "img_6521"],
+      "alt": "Display resin figure seated on an ornate carved pedestal"
+    },
+    "cyber_figure": {
+      "category": "studio",
+      "pick": "img_6524",
+      "alts_of": ["img_6520", "img_6523", "img_6525"],
+      "alt": "Sci-fi display figure with mechanical leg armor"
+    },
+    "veiled_headdress": {
+      "category": "studio",
+      "pick": "img_6548",
+      "alts_of": ["img_6549", "img_6550", "img_6555"],
+      "alt": "Veiled figure with spiked headdress on a detailed display base"
+    },
+    "action_wreckage": {
+      "category": "studio",
+      "pick": "img_6594",
+      "alts_of": ["img_6595"],
+      "alt": "Dynamic action figure leaping over mechanical wreckage base"
+    },
+    "bladeguard_knight": {
+      "category": "mat_cool",
+      "pick": "img_5028",
+      "alts_of": ["img_5029", "img_5030", "img_5080"],
+      "alt": "High-detail resin knight miniature with sword and ornate shield"
+    },
+    "claw_industrial": {
+      "category": "mat_cool",
+      "pick": "img_5042",
+      "alts_of": ["img_5043"],
+      "alt": "Industrial armored miniature with mechanical claw gauntlets"
+    },
+    "saw_claw_mech": {
+      "category": "mat_cool",
+      "pick": "img_5048",
+      "alts_of": [],
+      "alt": "Industrial mech miniature with circular saw and claw arms"
+    },
+    "respirator_industrial": {
+      "category": "mat_cool",
+      "pick": "img_5055",
+      "alts_of": [],
+      "alt": "Industrial armored soldier miniature with respirator and tool gauntlet"
+    },
+    "six_arm_beast": {
+      "category": "mat_cool",
+      "pick": "img_5075",
+      "alts_of": ["img_5076"],
+      "alt": "Six-armed fantasy beast warrior resin miniature"
+    },
+    "horned_knight": {
+      "category": "mat_cool",
+      "pick": "img_5090",
+      "alts_of": ["img_5091"],
+      "alt": "Horned armored knight resin miniature with broadsword"
+    },
+    "antler_scales_knight": {
+      "category": "mat_cool",
+      "pick": "img_5036",
+      "alts_of": ["img_5034"],
+      "alt": "Antler-crested knight miniature holding a sword and scales"
+    },
+    "mace_warrior": {
+      "category": "mat_cool",
+      "pick": "img_7344",
+      "alts_of": ["img_7345", "img_7346"],
+      "alt": "Heavy armored warrior resin miniature with spiked mace"
+    },
+    "horned_shield_knight": {
+      "category": "mat_cool",
+      "pick": "img_7350",
+      "alts_of": ["img_7355", "img_7358"],
+      "alt": "Horned knight miniature with spiked shield and mace"
+    },
+    "gasmask_infantry": {
+      "category": "mat_cool",
+      "pick": "img_7457",
+      "alts_of": ["img_7458", "img_7460", "img_7465"],
+      "alt": "Gas-masked infantry miniature with rifle and tactical gear"
+    },
+    "cloaked_traveler": {
+      "category": "mat_cool",
+      "pick": "img_7475",
+      "alts_of": ["img_7476", "img_7477", "img_7480"],
+      "alt": "Cloaked traveler miniature with backpack and sword"
+    },
+    "battle_tank": {
+      "category": "mat_dark",
+      "pick": "img_5115",
+      "alts_of": ["img_5105", "img_5110"],
+      "alt": "Sci-fi battle tank resin miniature with turret and tracks"
+    },
+    "monowheel_rider": {
+      "category": "mat_dark",
+      "pick": "img_5184",
+      "alts_of": ["img_5185", "img_5190", "img_5191", "img_5194"],
+      "alt": "Armored rider on a monowheel vehicle resin miniature"
+    },
+    "power_armor_chains": {
+      "category": "mat_dark",
+      "pick": "img_7331",
+      "alts_of": ["img_7332", "img_7335"],
+      "alt": "Ornate power-armored warrior with sword and chain details"
+    },
+    "dwarf_dual_pistols": {
+      "category": "mat_dark",
+      "pick": "img_7703",
+      "alts_of": ["img_7704", "img_7710", "img_7720", "img_7725", "img_7728"],
+      "alt": "Armored dwarf-style miniature dual-wielding ornate pistols"
+    },
+    "dwarf_rifle": {
+      "category": "mat_dark",
+      "pick": "img_7715",
+      "alts_of": ["img_7721", "img_7724"],
+      "alt": "Armored dwarf-style miniature carrying a heavy rifle"
+    },
+    "pack_infantry_a": {
+      "category": "mat_dark",
+      "pick": "img_7485",
+      "alts_of": ["img_7490"],
+      "alt": "Tabletop infantry resin miniature on a textured mat"
+    },
+    "pack_infantry_b": {
+      "category": "mat_dark",
+      "pick": "img_7491",
+      "alts_of": ["img_7493", "img_5060", "img_5065", "img_5085"],
+      "alt": "Detailed resin infantry miniature ready to paint"
+    }
+  }
 }
