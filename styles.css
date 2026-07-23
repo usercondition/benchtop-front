@@ -335,8 +335,10 @@ code {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
-  gap: 0.55rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
 }
 
 .gallery__item {
@@ -344,7 +346,7 @@ code {
   aspect-ratio: 1;
   overflow: hidden;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 0;
 }
 
 .gallery__item img {
@@ -362,10 +364,15 @@ code {
   filter: contrast(1.08) brightness(1);
 }
 
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 560px) {
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.4rem;
   }
 }
 
