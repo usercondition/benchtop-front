@@ -325,20 +325,26 @@ code {
   width: min(100% - 2 * var(--pad), 72rem);
 }
 
-/* Samples gallery — real client prints */
+/* Samples gallery — real client prints, full-bleed edge to edge */
 .section--samples {
   overflow: visible;
+  padding-inline: 0;
+}
+
+.section--samples .wrap--wide {
+  margin-bottom: 1.25rem;
 }
 
 .gallery {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 1px;
+  gap: 2px;
   background: var(--line);
-  border: 1px solid var(--line);
+  border-block: 1px solid var(--line);
 }
 
 .gallery__item {
