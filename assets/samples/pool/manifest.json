@@ -1,78 +1,12 @@
 {
   "per_row": 6,
-  "row_order": ["mat_cool", "studio", "mat_dark"],
+  "row_order": ["mat_cool", "mat_break", "mat_street"],
   "designs": {
-    "wheels_bbs": {
-      "category": "studio",
-      "pick": "img_2855",
-      "alts_of": ["img_2850", "img_2851", "img_2852"],
-      "alt": "Resin-printed mesh-style scale wheels with detailed tire tread"
-    },
-    "rally_car": {
-      "category": "studio",
-      "pick": "img_2865",
-      "alts_of": ["img_2860", "img_2861", "img_2863"],
-      "alt": "Unpainted resin rally car model with auxiliary light pod"
-    },
-    "witch_pedestal": {
-      "category": "studio",
-      "pick": "img_6514",
-      "alts_of": ["img_6515", "img_6521"],
-      "alt": "Display resin figure seated on an ornate carved pedestal"
-    },
-    "cyber_figure": {
-      "category": "studio",
-      "pick": "img_6524",
-      "alts_of": ["img_6520", "img_6523", "img_6525"],
-      "alt": "Sci-fi display figure with mechanical leg armor"
-    },
-    "veiled_headdress": {
-      "category": "studio",
-      "pick": "img_6548",
-      "alts_of": ["img_6549", "img_6550", "img_6555"],
-      "alt": "Veiled figure with spiked headdress on a detailed display base"
-    },
-    "action_wreckage": {
-      "category": "studio",
-      "pick": "img_6594",
-      "alts_of": ["img_6595"],
-      "alt": "Dynamic action figure leaping over mechanical wreckage base"
-    },
     "bladeguard_knight": {
       "category": "mat_cool",
       "pick": "img_5028",
-      "alts_of": ["img_5029", "img_5030", "img_5080"],
+      "alts_of": ["img_5029", "img_5030", "img_5031", "img_5032", "img_5080", "img_5081", "img_5082", "img_5083", "img_5084"],
       "alt": "High-detail resin knight miniature with sword and ornate shield"
-    },
-    "claw_industrial": {
-      "category": "mat_cool",
-      "pick": "img_5042",
-      "alts_of": ["img_5043"],
-      "alt": "Industrial armored miniature with mechanical claw gauntlets"
-    },
-    "saw_claw_mech": {
-      "category": "mat_cool",
-      "pick": "img_5048",
-      "alts_of": [],
-      "alt": "Industrial mech miniature with circular saw and claw arms"
-    },
-    "respirator_industrial": {
-      "category": "mat_cool",
-      "pick": "img_5055",
-      "alts_of": [],
-      "alt": "Industrial armored soldier miniature with respirator and tool gauntlet"
-    },
-    "six_arm_beast": {
-      "category": "mat_cool",
-      "pick": "img_5075",
-      "alts_of": ["img_5076"],
-      "alt": "Six-armed fantasy beast warrior resin miniature"
-    },
-    "horned_knight": {
-      "category": "mat_cool",
-      "pick": "img_5090",
-      "alts_of": ["img_5091"],
-      "alt": "Horned armored knight resin miniature with broadsword"
     },
     "antler_scales_knight": {
       "category": "mat_cool",
@@ -80,71 +14,125 @@
       "alts_of": ["img_5034"],
       "alt": "Antler-crested knight miniature holding a sword and scales"
     },
-    "mace_warrior": {
+    "claw_industrial": {
       "category": "mat_cool",
+      "pick": "img_5042",
+      "alts_of": ["img_5043", "img_5044"],
+      "alt": "Industrial armored miniature with mechanical claw gauntlets"
+    },
+    "saw_claw_mech": {
+      "category": "mat_cool",
+      "pick": "img_5048",
+      "alts_of": ["img_5049", "img_5050", "img_5051", "img_5052", "img_5053", "img_5054"],
+      "alt": "Industrial mech miniature with circular saw and claw arms"
+    },
+    "respirator_industrial": {
+      "category": "mat_cool",
+      "pick": "img_5055",
+      "alts_of": ["img_5056", "img_5057", "img_5058", "img_5059"],
+      "alt": "Industrial armored soldier miniature with respirator and tool gauntlet"
+    },
+    "stone_arm_beast": {
+      "category": "mat_cool",
+      "pick": "img_5061",
+      "alts_of": ["img_5060", "img_5062", "img_5063", "img_5064", "img_5065"],
+      "alt": "Beast miniature with antlers and a massive stone-block arm"
+    },
+    "fur_cloak_horned": {
+      "category": "mat_cool",
+      "pick": "img_5066",
+      "alts_of": ["img_5067", "img_5068", "img_5069"],
+      "alt": "Horned warrior miniature wrapped in a heavy fur cloak"
+    },
+    "six_arm_beast": {
+      "category": "mat_cool",
+      "pick": "img_5075",
+      "alts_of": ["img_5076", "img_5077", "img_5078", "img_5079"],
+      "alt": "Six-armed fantasy beast warrior resin miniature"
+    },
+    "multi_arm_executioner": {
+      "category": "mat_cool",
+      "pick": "img_5086",
+      "alts_of": ["img_5085", "img_5087", "img_5088", "img_5089"],
+      "alt": "Multi-armed warrior miniature with a massive executioner sword"
+    },
+    "horned_knight": {
+      "category": "mat_cool",
+      "pick": "img_5090",
+      "alts_of": ["img_5091", "img_5092"],
+      "alt": "Horned armored knight resin miniature with broadsword"
+    },
+    "power_armor_chains": {
+      "category": "mat_break",
+      "pick": "img_7331",
+      "alts_of": ["img_7332", "img_7333", "img_7334", "img_7335", "img_7336"],
+      "alt": "Ornate power-armored warrior with sword and chain details"
+    },
+    "mace_warrior": {
+      "category": "mat_break",
       "pick": "img_7344",
-      "alts_of": ["img_7345", "img_7346"],
+      "alts_of": ["img_7345", "img_7346", "img_7347", "img_7348", "img_7349"],
       "alt": "Heavy armored warrior resin miniature with spiked mace"
     },
     "horned_shield_knight": {
-      "category": "mat_cool",
+      "category": "mat_break",
       "pick": "img_7350",
-      "alts_of": ["img_7355", "img_7358"],
+      "alts_of": ["img_7351", "img_7352", "img_7353", "img_7354", "img_7355", "img_7356", "img_7357", "img_7358", "img_7359"],
       "alt": "Horned knight miniature with spiked shield and mace"
     },
-    "gasmask_infantry": {
-      "category": "mat_cool",
-      "pick": "img_7457",
-      "alts_of": ["img_7458", "img_7460", "img_7465"],
-      "alt": "Gas-masked infantry miniature with rifle and tactical gear"
-    },
-    "cloaked_traveler": {
-      "category": "mat_cool",
-      "pick": "img_7475",
-      "alts_of": ["img_7476", "img_7477", "img_7480"],
-      "alt": "Cloaked traveler miniature with backpack and sword"
-    },
-    "battle_tank": {
-      "category": "mat_dark",
-      "pick": "img_5115",
-      "alts_of": ["img_5105", "img_5110"],
-      "alt": "Sci-fi battle tank resin miniature with turret and tracks"
-    },
-    "monowheel_rider": {
-      "category": "mat_dark",
-      "pick": "img_5184",
-      "alts_of": ["img_5185", "img_5190", "img_5191", "img_5194"],
-      "alt": "Armored rider on a monowheel vehicle resin miniature"
-    },
-    "power_armor_chains": {
-      "category": "mat_dark",
-      "pick": "img_7331",
-      "alts_of": ["img_7332", "img_7335"],
-      "alt": "Ornate power-armored warrior with sword and chain details"
-    },
     "dwarf_dual_pistols": {
-      "category": "mat_dark",
+      "category": "mat_break",
       "pick": "img_7703",
-      "alts_of": ["img_7704", "img_7710", "img_7720", "img_7725", "img_7728"],
+      "alts_of": ["img_7704", "img_7705", "img_7706", "img_7707", "img_7708", "img_7709", "img_7710", "img_7711", "img_7712", "img_7713", "img_7714"],
       "alt": "Armored dwarf-style miniature dual-wielding ornate pistols"
     },
     "dwarf_rifle": {
-      "category": "mat_dark",
+      "category": "mat_break",
       "pick": "img_7715",
-      "alts_of": ["img_7721", "img_7724"],
+      "alts_of": ["img_7716", "img_7717"],
       "alt": "Armored dwarf-style miniature carrying a heavy rifle"
     },
-    "pack_infantry_a": {
-      "category": "mat_dark",
-      "pick": "img_7485",
-      "alts_of": ["img_7490"],
-      "alt": "Tabletop infantry resin miniature on a textured mat"
+    "dwarf_axe": {
+      "category": "mat_break",
+      "pick": "img_7718",
+      "alts_of": ["img_7719", "img_7720", "img_7721", "img_7722", "img_7723", "img_7724", "img_7725", "img_7726", "img_7727", "img_7728"],
+      "alt": "Armored dwarf-style miniature with a heavy axe"
     },
-    "pack_infantry_b": {
-      "category": "mat_dark",
-      "pick": "img_7491",
-      "alts_of": ["img_7493", "img_5060", "img_5065", "img_5085"],
-      "alt": "Detailed resin infantry miniature ready to paint"
+    "monowheel_rider": {
+      "category": "mat_street",
+      "pick": "img_5184",
+      "alts_of": ["img_5185", "img_5186", "img_5187", "img_5188", "img_5189", "img_5190", "img_5191", "img_5192", "img_5194"],
+      "alt": "Armored rider on a monowheel vehicle resin miniature"
+    },
+    "chaos_trio": {
+      "category": "mat_street",
+      "pick": "img_5195",
+      "alts_of": [],
+      "alt": "Set of three ornate sci-fi warrior miniatures"
+    },
+    "gasmask_infantry": {
+      "category": "mat_street",
+      "pick": "img_7457",
+      "alts_of": ["img_7458", "img_7459", "img_7460", "img_7461", "img_7462", "img_7463", "img_7464", "img_7465", "img_7466", "img_7467", "img_7468", "img_7469", "img_7470", "img_7471", "img_7472", "img_7474"],
+      "alt": "Gas-masked infantry miniature with rifle and tactical gear"
+    },
+    "cloaked_traveler": {
+      "category": "mat_street",
+      "pick": "img_7475",
+      "alts_of": ["img_7476", "img_7477", "img_7478", "img_7479", "img_7480", "img_7481", "img_7482", "img_7483", "img_7484"],
+      "alt": "Cloaked traveler miniature with backpack and sword"
+    },
+    "cross_bearer": {
+      "category": "mat_street",
+      "pick": "img_7485",
+      "alts_of": ["img_7486", "img_7487"],
+      "alt": "Armored miniature with a large cross strapped to its back"
+    },
+    "sword_knight": {
+      "category": "mat_street",
+      "pick": "img_7488",
+      "alts_of": ["img_7489", "img_7490", "img_7491", "img_7492", "img_7493", "img_7494", "img_7495"],
+      "alt": "Armored knight miniature wielding a longsword"
     }
   }
 }

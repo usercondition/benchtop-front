@@ -4,8 +4,8 @@ never repeating the same print at a different angle.
 
 Row order (visual break in the middle):
   1. cool grey gaming mat
-  2. dark studio
-  3. darker tabletop mat
+  2. darker warzone / asphalt (visual break)
+  3. street / tabletop mat
 """
 from __future__ import annotations
 
@@ -84,6 +84,8 @@ def sync_active(picked: list[tuple[str, str, dict]]) -> None:
 def rewrite_index(picked: list[tuple[str, str, dict]]) -> None:
     labels = {
         "mat_cool": "cool grey gaming mat",
+        "mat_break": "darker warzone mat — visual break",
+        "mat_street": "street / asphalt tabletop",
         "studio": "dark studio",
         "mat_dark": "darker tabletop mat",
     }
