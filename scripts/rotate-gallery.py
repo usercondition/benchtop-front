@@ -4,8 +4,8 @@ never repeating the same print at a different angle.
 
 Row order (visual break in the middle):
   1. cool grey gaming mat
-  2. darker warzone / asphalt (visual break)
-  3. street / tabletop mat
+  2. dark studio
+  3. darker tabletop mat
 """
 from __future__ import annotations
 
